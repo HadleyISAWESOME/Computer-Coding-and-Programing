@@ -1,0 +1,263 @@
+<!--
+<!DOCTYPE html>
+  <title>Hadley's Cafe & Bookshop</title>
+<a href="info.html"> Learn more about Hadley's Cafe</a>
+<li><a href="index.html">Homepage</a>
+    <link rel="stylesheet" href="style.css"> 
+    <!DOCTYPE html>
+<h1>Books</h1>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Hadley's Cafe & Bookshop</title>
+    <style>
+        /* --- General Base Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2; /* Cream background */
+            color: #4a3b32;            /* Dark chocolate text */
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* --- Header & Layout Navigation --- */
+        header {
+            background-color: #6f4e37; /* Coffee brown */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* --- Simple CSS Hover Dropdown Menu --- */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: #8b5a2b; /* Medium accent brown */
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .dropdown-content a {
+            color: #4a3b32;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f5ebe0; 
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* --- Main Content Layout Grid --- */
+        .main-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid #e6ccb2;
+            border-radius: 8px;
+        }
+
+        /* --- Intro Header --- */
+        .intro-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f5ebe0;
+        }
+
+        .intro-section h1 {
+            color: #6f4e37;
+            margin-bottom: 10px;
+        }
+
+        .info-link-box {
+            margin-top: 15px;
+        }
+
+        .info-link-box a {
+            color: #8b5a2b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .info-link-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Book Columns Layout --- */
+        .book-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .book-grid {
+                grid-template-columns: 1fr; /* Stacks columns on smaller screens */
+            }
+        }
+
+        .book-section h2 {
+            color: #6f4e37;
+            border-bottom: 2px solid #8b5a2b;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .book-section h3 {
+            color: #c07d4c; /* Warm autumn orange-brown */
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .book-section ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .book-section li {
+            margin-bottom: 8px;
+        }
+
+        .book-title {
+            font-weight: bold;
+        }
+
+        .book-author {
+            font-style: italic;
+            color: #7a6558;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header>
+    <!-- Logo Container: Holds both the image and the text tightly together -->
+    <div class="logo" style="display: flex; align-items: center; gap: 15px;">
+        <img src="CafeLogo4.png" alt="Hadley's Cafe & Bookstore Logo" style="height: 100px; width: auto;">
+        <div class="logo"> Hadley's Cafe & Bookshop</div>
+        </div>
+        <!-- The Dropdown Component -->
+        <div class="dropdown">
+            <button class="dropdown-btn">Links Menu ▾</button>
+            <div class="dropdown-content">
+                <a href="index.html">Homepage</a>
+                <a href="newpage.html">About Books</a>
+                <a href="info.html">Learn more about Hadley's Cafe</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        
+        <div class="intro-section">
+        <div class="logo"> Hadley's Cafe & Bookshop</div>
+            <h1>Books at Hadley's</h1>
+            <div class="logo" style="display: flex; align-items;">
+                </div>
+        <div class="logo"> Hadley's Cafe & Bookshop</div>
+            <p>Grab a book. Grab a drink. Stay a while. Explore our carefully selected collection of books for the fall season available to browse or buy.</p>
+            
+            <div class="info-link-box">
+                <a href="info.html">Learn more about Hadley's Cafe</a>
+            </div>
+        </div>
+
+        <!-- Two Column Grid for Book Categories -->
+        <div class="book-grid">
+            
+            <!-- Left Layout Column: General Book Categories -->
+            <div class="book-section">
+                <h2>Popular</h2>
+                <ul>
+                    <li><span class="book-title">The Midnight Libary</span> – <span class="book-author">Matt Haig</span></li>
+                    <li><span class="book-title">The Hunger Games</span> – <span class="book-author">Suzanne Collins</span></li>
+                    <li><span class="book-title">The Ballad of Songbirds and Snakes</span> – <span class="book-author">Suzanna Collins</span></li>
+                </ul>
+                <h2>Romance</h2>
+                <ul>
+                    <li><span class="book-title">Better Than the Movies</span> – <span class="book-author">Lynn Painter</span></li>
+                    <li><span class="book-title">To All the Boys I've Loved Before</span> – <span class="book-author">Jenny Han</span></li>
+                    <li><span class="book-title">Tweet Cute</span> – <span class="book-author">Emma Lord</span></li>
+                </ul>
+            </div>
+
+            <!-- Right Layout Column: Fall Reads & Non-Fiction -->
+            <div class="book-section">
+                <h2>Young Adult</h2>
+                <ul>
+                    <li><span class="book-title">The Inheritence Games</span> – <span class="book-author">Jennifer Lynn Barnes</span></li>
+                    <li><span class="book-title">Caraval</span> – <span class="book-author">Stephanie Garber</span></li>
+                    <li><span class="book-title">Powerless</span> – <span class="book-author">Lauren Roberts</span></li>
+                </ul>
+
+                <h3> Cozy Fall Reads</h3>
+                <ul>
+                    <li><span class="book-title">The Ex Hex</span> – <span class="book-author">Erin Sterling</span></li>
+                    <li><span class="book-title">Legends & Lattes</span> – <span class="book-author">Travis Baldree</span></li>
+                    <li><span class="book-title">The Very Secret Society of Irregular Witches</span> – <span class="book-author">Sangu Mandanna</span></li>
+                    <li><span class="book-title">Falling Like Leaves</span> – <span class="book-author">Misty Wilson</span></li>
+                </ul>
+            </div>
+
+        </div> <!-- End of Book Grid -->
+
+    </div> <!-- End of Main Container -->
+
+</body>
+</html>
+<!-- Little Bottom Header / Footer Area -->
+<footer style="background-color: #6f4e37; padding: 20px; text-align: center; margin-top: 40px; border-top: 3px solid #8b5a2b;">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+    
+        <!-- Little school project copyright tag -->
+        <p style="color: #faf6f0; font-size: 13px; font-family: Arial, sans-serif;">
+            &copy; 2026 Hadley's Cafe & Bookshop &bull; Downtown Summerville
+        </p>
+    </div>
+</footer>

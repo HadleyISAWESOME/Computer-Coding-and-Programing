@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadley's Cafe & Bookshop</title>
+</head><h1>About Hadley's Cafe & Bookshop</h1>
+<body><p>We have Iced coffee, Hot coffee, Frappuccino's, and more. We also have bakery items like Croissants, Muffins, and Bagels. And if you are wanting a sweet treat we have Cakepops, Cookies, and Brownies.</p>
+</body>
+<p>Any drink can be iced or hot. Ask about our dairy free and gluten free options</p>
+<li><a href="index.html">Homepage</a>
+<a href="newpage.html">About Books</a>
+    <link rel="stylesheet" href="style.css"> 
+<h2>Coffee</h2>
+<ul>
+    <li>Esspresso</li>
+    <li>Latte</li>
+    <li>Americano</li>
+    <li>Mocha</li>
+    <li>Flat White</li>
+    <li>Capuccino</li>
+</ul>
+<h3>Fall Favorites</h3>
+<ul>
+    <li>Pumpkin Spice Latte</li>
+    <li>Maple Brown Sugar Latte</li>
+    <li>Cinnamon Apple Latte</li>
+    <li>Caramel Apple Latte</li>
+    <li>Brown Sugar Cinnamon Latte</li>
+</ul>
+<h2>Frappuccino</h2>
+<ul>
+    <li>Mocha Frappuccino</li>
+    <li>Caramel Frappuccino</li>
+    <li>Vanilla Bean Frappuccino</li>
+    <li>Java Chip Frappuccino</li>
+</ul>
+<h3>Fall Favorites</h3>
+<ul>
+    <li>Pumpkin Spice Frappuccino</li>
+    <li>Caramel Apple Frappuccino</li>
+    <li>Maple Brown Sugar Frappuccino</li>
+    <li>Cinnamon Roll Frappuccino</li>
+    <li>Pumpkin Cookie Frappuccino</li>
+</ul>
+<h2>Tea</h2>
+<ul>
+    <li>Chai Tea Latte</li>
+    <li>Vannilla Chia</li>
+    <li>Matcha Latte</li>
+    <li>Peach Green Tea</li>
+    <li>Strawberry Green Tea</li>
+</ul>
+<h3>Fall Favorites</h3>
+<ul>
+    <li>Pumpkin Chia Latte</li>
+    <li>Apple Cinnamon Chia</li>
+    <li>Mapple Chia</li>
+    <li>Vanilla Cinnamon Chia</li>
+</ul>
+<h2>Refreshers</h2>
+<ul>
+    <li>Strawberry Refesher</li>
+    <li>Mango Refresher</li>
+    <li>Peach Refresher</li>
+    <li>Raspberry Refesher</li>
+    <li>Strawberry Lemonade Refresher</li>
+</ul>
+<h3>Fall Favorites</h3>
+<ul>
+    <li>Apple Berry Refresher</li>
+    <li>Cranberry Apple Refresher</li>
+    <li>Peach Apple Refesher</li>
+    <li>Spiced Apple Refresher</li>
+</ul>
+<h2>Bakery</h2>
+<ul>
+    <li>Butter Croissant</li>
+    <li>Chocolate Croissant</li>
+    <li>Blueberry Muffin</li>
+    <li>Lemon Poppy Seed Muffin</li>
+    <li>Chocolate Chip Muffin</li>
+    <li>Cinnamon Roll</li>
+    <li>Blueberry Scone</li>
+    <li>Chocolate Chip Scone</li>
+    <li>Bananna Nut Bread</li>
+    <li>Everything Bagel</li>
+</ul>
+<h3>Fall Favorites</h3>
+<ul>
+    <li>Pumpkin Cream Cheese Muffin</li>
+    <li>Apple Cinnamon Muffin</li>
+    <li>Pumpkin Chocolate Chip Muffin</li>
+    <li>Apple Turnover</li>
+    <li>Pumpkin Spice Scone</li>
+</ul>
+<h2>Sweet Treats</h2>
+<ul>
+    <li>Chocolate Chip Cookie</li>
+    <li>Brown Butter Cookie</li>
+    <li>Chocolate Fudge Brownie</li>
+    <li>Chocolate Cake Pop</li>
+    <li>Red Velvet Cake Pop</li>
+</ul>
+<h3>Fall Favorites</h3>
+<ul>
+    <li>Pumpkin Spice Cookie</li>
+    <li>Maple Peacan Cookie</li>
+    <li>Pumpkin Cheesecake</li>
+    <li>Cinnamon Sugar Donut</li>
+    <li>Apple Crumble Bar</li>
+</ul>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Hadley's Cafe & Bookshop</title>
+    <style>
+        /* --- General Base Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2; /* Cream background */
+            color: #4a3b32;            /* Dark chocolate text */
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* --- Header & Layout Navigation --- */
+        header {
+            background-color: #6f4e37; /* Coffee brown */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* --- Simple CSS Hover Dropdown Menu --- */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: #8b5a2b; /* Medium accent brown */
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .dropdown-content a {
+            color: #4a3b32;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f5ebe0; 
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* --- Main Content Layout Grid --- */
+        .main-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid #e6ccb2;
+            border-radius: 8px;
+        }
+
+        /* --- Intro Header --- */
+        .intro-section {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f5ebe0;
+        }
+
+        .intro-section h1 {
+            color: #6f4e37;
+            margin-bottom: 10px;
+        }
+
+        .notice-box {
+            background-color: #faf6f0;
+            border-left: 4px solid #8b5a2b;
+            padding: 10px 15px;
+            margin-top: 15px;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        /* --- Menu Columns --- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr; /* Stacks items on smaller devices */
+            }
+        }
+
+        .menu-section h2 {
+            color: #6f4e37;
+            border-bottom: 2px solid #8b5a2b;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .menu-section h3 {
+            color: #c07d4c; /* Warm orange-brown for fall favorites */
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .menu-section ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .menu-section li {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header>
+    <!-- Logo Container: Holds both the image and the text tightly together -->
+    <div class="logo" style="display: flex; align-items: center; gap: 15px;">
+        <img src="CafeLogo3.png" alt="Hadley's Cafe & Bookstore Logo" style="height: 200px; width: auto;">
+        </div>
+        <!-- The Dropdown Component -->
+        <div class="dropdown">
+            <button class="dropdown-btn">Links Menu ▾</button>
+            <div class="dropdown-content">
+                <a href="index.html">Homepage</a>
+                <a href="newpage.html">About Books</a>
+                 <a href="info.html">Learn more about Hadley's Cafe</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Menu Area -->
+    <div class="main-container">
+        
+        <div class="intro-section">
+            <h1>About Hadley's Cafe & Bookshop</h1>
+            <p>We have Iced coffee, Hot coffee, Frappuccinos, and more. We also have bakery items like Croissants, Muffins, and Bagels. And if you are wanting a sweet treat we have Cake pops, Cookies, and Brownies.</p>
+            
+            <div class="notice-box">
+                Any drink can be iced or hot. Ask about our dairy free and gluten free options.
+            </div>
+        </div>
+
+        <div class="menu-grid">
+            
+            <!-- Left Layout Column: Drinks -->
+            <div class="menu-section">
+                <h2>Coffee</h2>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Latte</li>
+                    <li>Americano</li>
+                    <li>Mocha</li>
+                    <li>Flat White</li>
+                    <li>Cappuccino</li>
+                </ul>
+
+                <h3> Fall Favorites</h3>
+                <ul>
+                    <li>Pumpkin Spice Latte</li>
+                    <li>Maple Brown Sugar Latte</li>
+                    <li>Cinnamon Apple Latte</li>
+                    <li>Caramel Apple Latte</li>
+                    <li>Brown Sugar Cinnamon Latte</li>
+                </ul>
+
+                <h2>Frappuccino</h2>
+                <ul>
+                    <li>Mocha Frappuccino</li>
+                    <li>Caramel Frappuccino</li>
+                    <li>Vanilla Bean Frappuccino</li>
+                    <li>Java Chip Frappuccino</li>
+                </ul>
+
+                <h3> Fall Favorites</h3>
+                <ul>
+                    <li>Pumpkin Spice Frappuccino</li>
+                    <li>Caramel Apple Frappuccino</li>
+                    <li>Maple Brown Sugar Frappuccino</li>
+                    <li>Cinnamon Roll Frappuccino</li>
+                    <li>Pumpkin Cookie Frappuccino</li>
+                </ul>
+
+                <h2>Tea</h2>
+                <ul>
+                    <li>Chai Tea Latte</li>
+                    <li>Vanilla Chai</li>
+                    <li>Matcha Latte</li>
+                    <li>Peach Green Tea</li>
+                    <li>Strawberry Green Tea</li>
+                </ul>
+
+                <h3> Fall Favorites</h3>
+                <ul>
+                    <li>Pumpkin Chai Latte</li>
+                    <li>Apple Cinnamon Chai</li>
+                    <li>Maple Chai</li>
+                    <li>Vanilla Cinnamon Chai</li>
+                </ul>
+
+                <h2>Refreshers</h2>
+                <ul>
+                    <li>Strawberry Refresher</li>
+                    <li>Mango Refresher</li>
+                    <li>Peach Refresher</li>
+                    <li>Raspberry Refresher</li>
+                    <li>Strawberry Lemonade Refresher</li>
+                </ul>
+
+                <h3> Fall Favorites</h3>
+                <ul>
+                    <li>Apple Berry Refresher</li>
+                    <li>Cranberry Apple Refresher</li>
+                    <li>Peach Apple Refresher</li>
+                    <li>Spiced Apple Refresher</li>
+                </ul>
+            </div>
+
+            <!-- Right Layout Column: Food & Treats -->
+            <div class="menu-section">
+                <h2>Bakery</h2>
+                <ul>
+                    <li>Butter Croissant</li>
+                    <li>Chocolate Croissant</li>
+                    <li>Blueberry Muffin</li>
+                    <li>Lemon Poppy Seed Muffin</li>
+                    <li>Chocolate Chip Muffin</li>
+                    <li>Cinnamon Roll</li>
+                    <li>Blueberry Scone</li>
+                    <li>Chocolate Chip Scone</li>
+                    <li>Banana Nut Bread</li>
+                    <li>Everything Bagel</li>
+                </ul>
+
+                <h3> Fall Favorites</h3>
+                <ul>
+                    <li>Pumpkin Cream Cheese Muffin</li>
+                    <li>Apple Cinnamon Muffin</li>
+                    <li>Pumpkin Chocolate Chip Muffin</li>
+                    <li>Apple Turnover</li>
+                    <li>Pumpkin Spice Scone</li>
+                </ul>
+
+                <h2>Sweet Treats</h2>
+                <ul>
+                    <li>Chocolate Chip Cookie</li>
+                    <li>Brown Butter Cookie</li>
+                    <li>Chocolate Fudge Brownie</li>
+                    <li>Chocolate Cake Pop</li>
+                    <li>Red Velvet Cake Pop</li>
+                </ul>
+
+                <h3> Fall Favorites</h3>
+                <ul>
+                    <li>Pumpkin Spice Cookie</li>
+                    <li>Maple Pecan Cookie</li>
+                    <li>Pumpkin Cheesecake</li>
+                    <li>Cinnamon Sugar Donut</li>
+                    <li>Apple Crumble Bar</li>
+                </ul>
+            </div>
+
+        </div> <!-- End of Menu Grid -->
+
+    </div> <!-- End of Main Container -->
+
+</body>
+</html>

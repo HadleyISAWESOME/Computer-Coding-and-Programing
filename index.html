@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadley's Cafe & Bookshop</title>
+</head><h1>Hadley's Cafe & Bookshop</h1>
+<body>
+   <h2>Welcome to Hadley's Cafe & Bookshop</h2>
+</body>
+  <p>Grab a book. Grab a drink. Stay a while.</p>
+   <p>Hadley's Cafe & Bookshop is a cozy coffee shop and bookstore where you can discover new stories, enjoy delicious drinks and treats, and relax in a welcoming atmosphere. </p>
+   <p>We are located on 123 Blvd Downtown Summerville.</p>
+</body>
+</html>
+<a href="info.html"> Learn more about Hadley's Cafe</a>
+<p></p>
+<a href="newpage.html">About Books</a>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadley's Cafe & Bookshop</title>
+    <style>
+        /* --- General Base Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f2; /* Cream background */
+            color: #4a3b32;            /* Dark chocolate text */
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* --- Header & Layout Navigation --- */
+        header {
+            background-color: #6f4e37; /* Coffee brown */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Styles to keep your picture logo clean */
+        .logo img {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        /* --- Simple CSS Hover Dropdown Menu --- */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: #8b5a2b; /* Medium accent brown */
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .dropdown-content a {
+            color: #4a3b32;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f5ebe0; 
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* --- Main Content Layout --- */
+        .main-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px 30px;
+            background-color: white;
+            border: 1px solid #e6ccb2;
+            border-radius: 8px;
+            text-align: center; /* Centers your welcome text */
+        }
+
+        .main-container h1 {
+            color: #6f4e37;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        .main-container h2 {
+            color: #8b5a2b;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .tagline {
+            font-size: 18px;
+            font-weight: bold;
+            color: #6f4e37;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-bottom: 30px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Custom Buttons for Links --- */
+        .link-buttons {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        @media (max-width: 500px) {
+            .link-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #faf6f0;
+            color: #6f4e37;
+            padding: 12px 20px;
+            border: 2px solid #e6ccb2;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #6f4e37;
+            color: white;
+            border-color: #6f4e37;
+        }
+
+        /* --- Location Footer Box --- */
+        .location-box {
+            background-color: #faf6f0;
+            border: 1px dashed #8b5a2b;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header>
+    <!-- Logo Container: Holds both the image and the text tightly together -->
+    <div class="logo" style="display: flex; align-items: center; gap: 15px;">
+        <img src="CafeLogo1.png" alt="Hadley's Cafe & Bookstore Logo" style="height: 200px; width: auto;">
+        <span style="font-size: 24px; font-weight: bold; white-space: nowrap;">Hadley's Cafe & Bookshop</span>
+    </div>
+    </div>
+        <!-- The Dropdown Component -->
+        <div class="dropdown">
+            <button class="dropdown-btn">Links Menu ▾</button>
+            <div class="dropdown-content">
+                <a href="info.html">Cafe Menu</a>
+                <a href="newpage.html">About Books</a>
+                <a href="info.html">Learn more about Hadley's Cafe</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        
+        <h1>Hadley's Cafe & Bookshop</h1>
+        <h2>Welcome to Hadley's Cafe & Bookshop</h2>
+        
+        <p class="tagline">Grab a book. Grab a drink. Stay a while.</p>
+        
+        <p class="description">
+            Hadley's Cafe & Bookshop is a cozy coffee shop and bookstore where you can discover new stories, enjoy delicious drinks and treats, and relax in a welcoming atmosphere.
+        </p>
+
+        <!-- Nice Quick-Click Layout Buttons for your main links -->
+        <div class="link-buttons">
+            <a href="menu.html" class="btn"> View Cafe Menu</a>
+            <a href="newpage.html" class="btn"> Browse Our Books</a>
+        </div>
+
+        <!-- Location Information -->
+        <div class="location-box">
+             <P><strong>Visit Us:</strong> We are located on 123 Blvd Downtown Summerville.</P>
+             
+             <P><strong>Cafe Hours</strong> 7:00 AM - 6:00 PM Everyday</P>
+        </div>
+
+    </div>
+
+</body>
+</html>
